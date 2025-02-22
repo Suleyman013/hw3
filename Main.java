@@ -21,6 +21,11 @@ public class Main {
                 {dayofWeek.WEDNESDAY.name(), "going university"},
                 {dayofWeek.FRIDAY.name(), "walking"}
         };
+          for (int i = 0; i < 10000000; i++) {
+            if (family.removeChild(child1)) {
+                System.gc();
+            }
+        }
         michael.setSchedule(schedulemichael);
         holly.setSchedule(scheduleholly);
         family2.addchild(holly);
@@ -30,7 +35,7 @@ public class Main {
         System.out.println("----------------------------");
         System.out.println(family2);
         System.out.println("----------------------------");
-        family2.removeChildrenWithIndex(2);
+        family2.removeChildrenWithIndex(1);
         System.out.println(family2);
         System.out.println("Number of family members: " + family1.Memmebersoffamily());
         System.out.println("Number of family members: " + family2.Memmebersoffamily());
