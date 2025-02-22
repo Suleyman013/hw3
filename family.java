@@ -77,7 +77,7 @@ class Family {
             }
         }
 
-        children = newChildren; // Update the children array
+        children = newChildren; 
     }
     public int Memmebersoffamily(){
         return children.length +2;
